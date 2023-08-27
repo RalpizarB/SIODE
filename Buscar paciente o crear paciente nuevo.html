@@ -1,0 +1,52 @@
+-<!DOCTYPE html>
+<!--1-->
+<html lang="en">
+<head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            🦷 SIODE - Sistema de Información Odontológica y Expedientes
+        </a>
+        <div class="ml-auto">
+            <span class="navbar-text text-white">Dr. Rocío Mejía Flores - Odontólogo General</span>
+        </div>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odontology Clinic System</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Sistema de Información Odontológica y Expedientes</h1>
+        <div class="card">
+            <div class="card-body">
+                <label for="patient-search">Selecciona una paciente</label>
+                <!-- Search bar with default text -->
+                <input type="text" class="form-control mb-3" id="patient-search" placeholder="Search by name or ID" value="Juan">
+                <ul class="list-group mb-4">
+                    <!-- Mock patient names partially coinciding with the default text "John" -->
+                    <a href="Historial de Atenciones.html">
+                        <li class="list-group-item">Juan Perez</li>
+                    </a>
+                    <a href="Historial de Atenciones.html">
+                        <li class="list-group-item">Juan Garcia Lopez</li>
+                    </a>
+                    <a href="Historial de Atenciones.html">
+                        <li class="list-group-item">Juan Armando Mendoza</li>
+                    </a>
+                    <!-- ... add more patients here -->
+                </ul>
+                <a href="Historial de Atenciones.html">
+                    <button class="btn btn-primary btn-block" >Crear un nuevo Paciente</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

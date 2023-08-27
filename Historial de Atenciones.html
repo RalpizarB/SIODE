@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            🦷 SIODE - Sistema de Información Odontológica y Expedientes
+        </a>
+        <div class="ml-auto">
+            <span class="navbar-text text-white">Dr. Rocío Mejía Flores - Odontólogo General</span>
+        </div>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio del Paciente - Sistema Clínico de Odontología</title>
+    <!-- Añadir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <a href="Buscar paciente o crear paciente nuevo.html" class="btn btn-danger btn-block mt-3">Volver</a>
+    <div class="container mt-5">
+        
+        <h1 class="text-center mb-4">Inicio del Paciente</h1>
+        <div class="card">
+            <div class="card-body">
+                <h3>Datos Generales del Paciente:</h3>
+                <p>Nombre: John Doe</p>
+                <p>ID: 123456</p>
+                <p>Edad: 30</p>
+                <p>Teléfono: 123-456-7890</p>
+
+                <h4 class="mt-4">Historial de Atenciones:</h4>
+                <!-- Lista de atenciones -->
+                <div class="list-group">
+                    <a href="Atendiendo al paciente.html" class="list-group-item list-group-item-action">
+                        Fecha: 10/08/2023 - Ver Detalles
+                    </a>
+                    <a href="Atendiendo al paciente.html" class="list-group-item list-group-item-action">
+                        Fecha: 05/08/2023 - Ver Detalles
+                    </a>
+                    <a href="Atendiendo al paciente.html" class="list-group-item list-group-item-action">
+                        Fecha: 10/08/2023 - Tipo: Revisión - Odontólogo: Dr. Pérez - Estado: Completado - Formularios: 3 - Ver Detalles
+                    </a>
+                    
+                    <!-- ... añadir más atenciones aquí -->
+                </div>
+
+                <!-- Botón para crear nueva atención -->
+                <button class="btn btn-success btn-block mt-3">Crear Nueva Atención</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Añadir Bootstrap JS (Opcional) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+

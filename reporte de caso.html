@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica de Endodoncia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .navbar-brand {
+            font-family: 'Lobster', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            🦷 SIODE - Sistema de Información Odontológica y Expedientes
+        </a>
+        <div class="ml-auto">
+            <span class="navbar-text text-white">Dr. Rocío Mejía Flores - Odontólogo General</span>
+        </div>
+    </nav>
+    <a href="Atendiendo al paciente.html" class="btn btn-danger btn-block mt-3">Volver</a>
+    <div class="container mt-4">
+        
+        <h2 class="text-center">REPORTE DE CASO</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombrePaciente">Nombre Paciente:</label>
+                <input type="text" class="form-control" id="nombrePaciente" value="Juan">
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" class="form-control" id="fecha" value="2023-07-26">
+            </div>
+            <div class="form-group">
+                <label for="doctorTratante">Doctor Tratante:</label>
+                <input type="text" class="form-control" id="doctorTratante" value="Dr. Rocío">
+            </div>
+            <div class="form-group">
+                <label for="organoDentario">Órgano Dentario:</label>
+                <input type="number" class="form-control" id="organoDentario" value="46">
+            </div>
+            <div class="form-group">
+                <label for="diagnostico">Diagnóstico:</label>
+                <input type="text" class="form-control" id="diagnostico">
+            </div>
+            <!-- ... Más campos según sea necesario ... -->
+            
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>CONDUCTO</th>
+                        <th>MM</th>
+                        <th>REFERENCIA</th>
+                        <th>SISTEMA</th>
+                        <th>LM</th>
+                        <th>OBTURACIÓN</th>
+                        <th>COMENTARIOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" maxlength="20"></td>
+                            <td><input type="text" class="form-control" maxlength="10"></td>
+                            <td><input type="text" class="form-control" maxlength="20"></td>
+                            <td><input type="text" class="form-control" maxlength="20"></td>
+                            <td><input type="text" class="form-control" maxlength="10"></td>
+                            <td><input type="text" class="form-control" maxlength="100"></td>
+                            <td><input type="text" class="form-control" maxlength="100"></td>
+                        </tr>
+                        <!-- Puedes agregar más filas copiando y pegando la fila dentro de la etiqueta <tbody> si es necesario -->
+                    </tbody>
+                </tbody>
+            </table>
+            <!-- ... Más campos o tablas según sea necesario ... -->
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-primary">Añadir Radiografías</button>
+            </div>
+        </form>
+        <h3 class="text-center">Radiografías</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="ruta-imagen1.png" alt="Radiografía 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="ruta-imagen2.png" alt="Radiografía 2" class="img-fluid">
+            </div>
+            <!-- ... Más imágenes según sea necesario ... -->
+        </div>
+    </div>
+
+    <!-- Aquí puedes pegar el div que te proporcioné -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            🦷 SIODE - Sistema de Información Odontológica y Expedientes
+        </a>
+        <div class="ml-auto">
+            <span class="navbar-text text-white">Dr. Rocío Mejía Flores - Odontólogo General</span>
+        </div>
+    </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica de Endodoncia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .navbar-brand {
+            font-family: 'Lobster', cursive;
+        }
+    </style>
+</head>
+<body>
+    <a href="Atendiendo al paciente.html" class="btn btn-danger btn-block mt-3">Volver</a>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Historia Clínica de Endodoncia</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" maxlength="40" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" class="form-control" id="edad" maxlength="3" required>
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" class="form-control" id="domicilio" maxlength="40" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                <label>Transfusiones:</label>
+                <label><input type="radio" name="transfusiones" value="SI"> SI</label>
+                <label><input type="radio" name="transfusiones" value="NO"> NO</label>
+            </div>
+            <div class="form-group">
+                <label>¿Ha donado sangre?</label>
+                <label><input type="radio" name="donadoSangre" value="SI"> SI</label>
+                <label><input type="radio" name="donadoSangre" value="NO"> NO</label>
+            </div>
+            <div class="form-group">
+                <label>¿Lo han anestesiado anteriormente?</label>
+                <label><input type="radio" name="anestesiado" value="SI"> SI</label>
+                <label><input type="radio" name="anestesiado" value="NO"> NO</label>
+            </div>
+            <div class="form-group">
+                <label for="complicaciones">Complicaciones:</label>
+                <input type="text" class="form-control" id="complicaciones" maxlength="20" required>
+            </div>
+            <div class="form-group">
+                <label for="observaciones">Observaciones:</label>
+                <textarea class="form-control" id="observaciones" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pronostico">Pronóstico:</label>
+                <input type="text" class="form-control" id="pronostico">
+            </div>
+            <div class="form-group">
+                <label>Características (opción múltiple):</label>
+                <div>
+                    <label><input type="checkbox" name="caracteristicas" value="Caries"> Caries</label>
+                    <label><input type="checkbox" name="caracteristicas" value="Restauración"> Restauración</label>
+                    <!-- ... más opciones según sea necesario ... -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Cambio de Color:</label>
+                <label><input type="radio" name="cambioColor" value="SI"> SI</label>
+                <label><input type="radio" name="cambioColor" value="NO"> NO</label>
+            </div>
+            <div class="form-group">
+                <label>Movilidad:</label>
+                <label><input type="radio" name="movilidad" value="SI"> SI</label>
+                <label><input type="radio" name="movilidad" value="NO"> NO</label>
+            </div>
+            <div class="form-group">
+                <label>Zona Periapical - Cámara Pulpar:</label>
+                <label><input type="radio" name="camaraPulpar" value="Normal"> Normal</label>
+                <label><input type="radio" name="camaraPulpar" value="Amplia"> Amplia</label>
+                <label><input type="radio" name="camaraPulpar" value="Estrecha"> Estrecha</label>
+            </div>
+            <div class="form-group">
+                <label>Conducto Radicular:</label>
+                <label><input type="radio" name="conductoRadicular" value="Normal"> Normal</label>
+                <label><input type="radio" name="conductoRadicular" value="Amplio"> Amplio</label>
+                <!-- ... más opciones según sea necesario ... -->
+            </div>
+            <div class="form-group">
+                <label>Piso de la cámara:</label>
+                <label><input type="radio" name="pisoCamara" value="Normal"> Normal</label>
+                <label><input type="radio" name="pisoCamara" value="Perforado"> Perforado</label>
+            </div>
+            <div class="form-group">
+                <label>Zona Periapical:</label>
+                <label><input type="radio" name="zonaPeriapical" value="Periodonto Normal"> Periodonto Normal</label>
+                <label><input type="radio" name="zonaPeriapical" value="Periodonto ensanchado"> Periodonto ensanchado</label>
+                <!-- ... más opciones según sea necesario ... -->
+            </div>
+            <div class="form-group">
+                <label>Tipo de Dolor:</label>
+                <label><input type="radio" name="tipoDolor" value="Espontáneo"> Espontáneo</label>
+                <label><input type="radio" name="tipoDolor" value="Provocado"> Provocado</label>
+                <!-- ... más opciones según sea necesario ... -->
+            </div>
+            <div class="form-group">
+                <label>Ubicación:</label>
+                <input type="text" class="form-control" id="ubicacion" maxlength="35" required>
+            </div>
+            <div class="form-group">
+                <label>Duración:</label>
+                <label><input type="radio" name="duracion" value="Seg"> Seg</label>
+                <label><input type="radio" name="duracion" value="Min"> Min</label>
+                <label><input type="radio" name="duracion" value="Horas"> Horas</label>
+                <label><input type="radio" name="duracion" value="Nocturno"> Nocturno</label>
+            </div>
+            <div class="form-group">
+                <label>Estímulo:</label>
+                <label><input type="radio" name="estimulo" value="Frío"> Frío</label>
+                <label><input type="radio" name="estimulo" value="Calor"> Calor</label>
+                <label><input type="radio" name="estimulo" value="Dulce"> Dulce</label>
+                <label><input type="radio" name="estimulo" value="Aire"> Aire</label>
+            </div>
+            <div class="form-group">
+                <label>Enfermedades familiares:</label>
+                <input type="text" class="form-control" id="enfermedadesFamiliares" maxlength="30" required>
+            </div>
+            <div class="form-group">
+                <label>Alergias:</label>
+                <label><input type="radio" name="alergias" value="SI"> SI</label>
+                <label><input type="radio" name="alergias" value="NO"> NO</label>
+                <label>¿Cuál?</label>
+                <input type="text" class="form-control" id="cualAlergia" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label>Hábitos:</label>
+                <label><input type="radio" name="habitos" value="SI"> SI</label>
+                <label><input type="radio" name="habitos" value="NO"> NO</label>
+                <label>¿Cuál?</label>
+                <input type="text" class="form-control" id="cualHabito" maxlength="30">
+            </div>
+            <div class="form-group">
+                <label>Tipo de Sangre:</label>
+                <select class="form-control" id="tipoSangre">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tratamientoMedico">Tratamiento(s) médico(s):</label>
+                <input type="text" class="form-control" id="tratamientoMedico" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="enfermedadesSistemicas">Enfermedades sistémicas:</label>
+                <input type="text" class="form-control" id="enfermedadesSistemicas" maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="cirugias">Cirugías:</label>
+                <input type="text" class="form-control" id="cirugias" maxlength="50">
+            </div>
+            <div class="form-group">
+                <label>Fecha de última menstruación:</label>
+                <input type="date" class="form-control" id="fechaMenstruacion">
+            </div>
+            <div class="form-group">
+                <label>Enfermedades de transmisión sexual:</label>
+                <label><input type="radio" name="enfermedadesTransmision" value="SI"> SI</label>
+                <label><input type="radio" name="enfermedadesTransmision" value="NO"> NO</label>
+                <label>¿Cuál?</label>
+                <input type="text" class="form-control" id="cualEnfermedadTransmision" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="doctorReferidor">Doctor Referidor:</label>
+                <input type="text" class="form-control" id="doctorReferidor" maxlength="40">
+            </div>
+            <div class="form-group text-center">
+                <label>*Por medio de la presente manifiesto haber sido informado sobre el procedimiento que se realizará a mi persona...</label>
+            </div>
+            <div class="container mt-4">
+                <h2 class="text-center">Conductometría</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Conducto</th>
+                            <th>MM Referencia</th>
+                            <th>LP</th>
+                            <th>LM</th>
+                            <th>Técnica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" maxlength="20"></td>
+                            <td><input type="text" class="form-control" maxlength="10"></td>
+                            <td><input type="text" class="form-control" maxlength="20"></td>
+                            <td><input type="text" class="form-control" maxlength="10"></td>
+                            <td><input type="text" class="form-control" maxlength="20"></td>
+                        </tr>
+                        <!-- Puedes agregar más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="text-center">Notas de Evolución</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>A Cuenta</th>
+                <th>Saldo</th>
+                <th>Firma</th>
+                <th>Notas de Evolución</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" class="form-control" maxlength="15"></td>
+                <td><input type="text" class="form-control" maxlength="10"></td>
+                <td><input type="text" class="form-control" maxlength="10"></td>
+                <td><input type="text" class="form-control" maxlength="10"></td>
+                <td><input type="text" class="form-control"></td>
+                <td><textarea class="form-control" rows="1" maxlength="300"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
